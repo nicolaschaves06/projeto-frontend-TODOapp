@@ -12,7 +12,7 @@ export class App {
   arrayDeTarefas = signal<Tarefa[]>([]);
  apiURL : string
   constructor(private http: HttpClient) {
-    this.apiURL = 'http://localhost:3000';
+    this.apiURL = 'https://projeto-backend-todoapp.onrender.com';
     this.READ_tarefas();
   }
   CREATE_tarefa(descricaoNovaTarefa: string) {
